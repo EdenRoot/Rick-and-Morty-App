@@ -3,7 +3,6 @@ package dev.kiryao.rickandmorty.core.data.mapper
 import dev.kiryao.rickandmorty.core.data.local.RMEntity
 import dev.kiryao.rickandmorty.core.data.remote.RMDto
 import dev.kiryao.rickandmorty.core.domain.model.RMItem
-import kotlin.Int
 
 fun RMDto.toRMEntity(): RMEntity {
     return RMEntity(
