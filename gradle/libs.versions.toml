@@ -23,10 +23,9 @@ roomTesting = "2.7.2"
 paging_version = "3.3.6"
 jetbrainsKotlinJvm = "2.2.0"
 retrofit = "3.0.0"
-converterGson = "3.0.0"
 okHttp = "5.1.0"
 coil = "3.3.0"
-moshi = "3.0.0"
+moshi = "1.15.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -68,10 +67,13 @@ hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", ve
 kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
 
 # Networking
-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "moshi" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okHttp" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+moshi = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
+moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi" }
+moshi-ksp = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
 coil-kt-compose = { module = "io.coil-kt.coil3:coil-compose", version.ref = "coil" }
 coil-network-okhttp = { module = "io.coil-kt.coil3:coil-network-okhttp", version.ref = "coil" }
 

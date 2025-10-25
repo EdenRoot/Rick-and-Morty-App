@@ -29,14 +29,14 @@ class RMRemoteMediator(
                     if (lastItem == null) {
                         1
                     } else {
-                        (lastItem.id / state.config.pageSize) + 1
+                        (lastItem.id / 20) + 1
                     }
                 }
             }
 
-            val characters = rmApi.getCharacters(
-                page = loadKey
-            )
+            val response = rmApi.getCharacters(page = loadKey)
+
+            val characters = response.results
 
             rmDatabase.withTransaction {
                 if (loadType == LoadType.REFRESH) {
